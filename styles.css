@@ -1,0 +1,96 @@
+.clac {
+  background-color: black;
+  column-gap: 2px;
+  row-gap: 2px;
+  display: grid;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  grid-template-rows: repeat(6, 100px);
+  grid-template-columns: repeat(4, 100px);
+  border-radius: 3%;
+  overflow: hidden;
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid black;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  background-color: black;
+  text-align: right;
+  margin: auto 0;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.clear-button {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  line-height: 100px;
+  background-color: thistle;
+}
+
+.backspace-button {
+  grid-row: 2 / span 1;
+  grid-column-end: 3 / span 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: thistle;
+}
+
+.individual-ops {
+  background-color: orange;
+  grid-column: 4 / 5;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.numpad {
+  grid-row: 3 / span 3;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  gap: 2px;
+}
+
+.number {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: thistle;
+}
+
+.zero {
+  background-color: thistle;
+  grid-column: 1 / span 3;
+  grid-row: 6 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickable {
+  user-select: none;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  transition: background-color 0.25s;
+  background-color: white;
+}
+
+.clickable:active {
+  background-color: blue;
+  color: white;
+}
