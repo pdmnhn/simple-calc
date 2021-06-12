@@ -85,9 +85,11 @@
   cursor: pointer;
 }
 
-.clickable:hover {
-  transition: background-color 0.25s;
-  background-color: white;
+@media (hover: hover) {
+  .clickable:hover {
+    transition: background-color 0.25s;
+    background-color: white;
+  }
 }
 
 .clickable:active {
