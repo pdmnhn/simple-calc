@@ -7,7 +7,7 @@
   width: fit-content;
   height: fit-content;
   grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
   border-radius: 3%;
   overflow: hidden;
   font-size: 50px;
